@@ -14,5 +14,6 @@ if re.search(regex, "September 9"):
     #    match.group(1) match.group(2), ... will return the capture
     #    groups in order from left to right in the input string
     #    match.group() is equivalent to match.group(0)
-    # So this will print "September 9"
-    print "Full match: %s" % (match.group(0))
+
+    print "Full match: %s" % (match.group(0))# So this will print "September 9"
+    print "Month: %s" % (match.group(1))  # So this will print "September"
