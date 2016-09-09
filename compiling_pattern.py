@@ -7,3 +7,9 @@ if result:
     #   0 11
     # for the start and end of the match
     print result.start(), result.end()
+# This will print:
+#   Hello
+#   Crazy
+# for each of the captured groups that matched
+for result in regex.findall("Hello World, Crazy World"):
+    print result
