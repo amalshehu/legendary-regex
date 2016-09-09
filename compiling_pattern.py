@@ -13,3 +13,6 @@ if result:
 # for each of the captured groups that matched
 for result in regex.findall("Hello World, Crazy World"):
     print result
+# This will substitute "World" with "Earth" and print:
+#   Hello Earth
+print regex.sub(r"\1 Earth", "Hello World")
