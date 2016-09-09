@@ -17,3 +17,13 @@ for match in matches:
     #   August
     #   Dec
     print "Match month: %s" % (match)
+# If we need the exact positions of each match
+regex = r"([a-zA-Z]+) \d+"
+matches = re.finditer(regex, "July 16, September 09, December 12")
+for match in matches:
+    # This will now print:
+    #   0 7
+    #   9 17
+    #   19 25
+    # which corresponds with the start and end of each match in the input string
+    print "Match at index: %s, %s" % (match.start(), match.end())
