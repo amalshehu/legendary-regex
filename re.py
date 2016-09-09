@@ -17,3 +17,8 @@ if re.search(regex, "September 9"):
 
     print "Full match: %s" % (match.group(0))# So this will print "September 9"
     print "Month: %s" % (match.group(1))  # So this will print "September"
+    print "Day: %s" % (match.group(2))# So this will print "9"
+
+else:
+    # If re.search() does not match, then None is returned
+    print "The regex pattern does not match. :("
