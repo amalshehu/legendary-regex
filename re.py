@@ -9,3 +9,10 @@ if re.search(regex, "September 9"):
     # group() method to get all the matches and captured groups.
     match = re.search(regex, "September 9")
     print "Match at index %s, %s" % (match.start(), match.end())
+    # The groups contain the matched values.  In particular:
+    #    match.group(0) always returns the fully matched string
+    #    match.group(1) match.group(2), ... will return the capture
+    #    groups in order from left to right in the input string
+    #    match.group() is equivalent to match.group(0)
+    # So this will print "September 9"
+    print "Full match: %s" % (match.group(0))
