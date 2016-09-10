@@ -1,6 +1,6 @@
 import time
 import re
-
+print("############### TEST 1 ################")
 input = "maximum"
 
 if "x" in input:
